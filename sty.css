@@ -1,0 +1,407 @@
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+header, nav, .main-section, .index-con, .livestream-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2em;
+  text-align: center;
+  color: #2a3743;
+  padding: 20px 0;
+}
+
+nav {
+  background-color: #f4f4f9;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #1819196f;
+  border-bottom: 2px solid #1819196f;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  padding: 15px;
+  display: block;
+}
+
+/* This CSS is for INDEX.HTML */
+.main-section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 600px;
+}
+
+#bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  
+}
+
+.index-con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center children horizontally */
+  gap: 20px;
+  padding: 20px;
+}
+.section {
+  flex: 1 1 22%; /* Allows 4 items in a row on large screens, adjusts as needed */
+  max-width: 300px; /* Maximum width of each section to control sizing */
+  min-width: 250px; /* Minimum width to ensure content is readable */
+  padding: 10px; /* Adds internal spacing */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional shadow for depth */
+}
+.section p {
+  padding-top: 8px;
+  text-align: justify;
+  text-indent: 5px;
+}
+.section h3 {
+  text-align: center;
+}
+
+.section a {
+  display: inline-block; /* Ensures link takes the form of the text */
+  margin-top: 10px; /* Space above link */
+  color: #007BFF; /* Stylish blue color for links */
+  text-decoration: none; /* Removes underline */
+  text-align: center;
+}
+.how-it-started h1 {
+  text-align: center; /* Centers the text */
+  font-size: 24px; /* Appropriate size for readability */
+  padding: 20px 0; /* Adds vertical spacing */
+  margin: 0 auto; /* Ensures it stays centered */
+}
+
+/* INDEX.HTML CODE ENDS */
+
+/* GETINTOUCH.HTML CODE STARTS */
+.story-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story-image img {
+  width: 100%;
+  height: auto;
+}
+
+.ourstory {
+  text-align: center;
+  padding: 20px;
+}
+
+.team-container1, .team-container2, .team-container3, .team-container4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.team-left, .team-right {
+  flex: 1 1 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.team-left img, .team-right img {
+  width: auto;
+  max-width: 250px;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+}
+
+.team-left-text, .team-right-text {
+  flex: 1 1 50%;
+  padding: 10px;
+  
+}
+.team-left p, .team-right p, .team-left-text p, .team-right-text p, 
+.team-left-text h1, .team-right-text h1 {
+  margin: 0 0 10px; /* Adds margin below each paragraph and header */
+  padding: 0 20px; /* Adds padding to ensure text doesn't touch the edges */
+}
+/* GETINTOUCH.HTML ENDS */
+
+/* LIDAR.HTML STARTS */
+.lidar-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line on small screens */
+  justify-content: space-around;
+  align-items: center; /* Vertically centers the items in their container */
+  padding: 20px;
+  gap: 20px;
+}
+
+.twitch-lidar, .embed-container {
+  flex: 1 1 50%; /* Each takes up half of the container by default */
+  padding: 10px;
+  box-sizing: border-box; /* Ensures padding doesn't affect the overall width */
+}
+
+/* Make iframes responsive */
+.twitch-lidar iframe {
+  width: 100%; /* Full width of its parent */
+  height: auto; /* Maintain aspect ratio */
+  aspect-ratio: 16 / 9; /* Maintains a 16:9 aspect ratio */
+}
+
+.embed-container {
+  text-align: center; /* Centers the text in the explanatory text box */
+}
+
+.embed-container h3, .embed-container p {
+  margin: 0 0 10px; /* Spacing between paragraphs and headings */
+}
+.feed-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; /* Centers the heading */
+}
+
+.big-header {
+  margin-bottom: 20px; /* Adds space below the header */
+  text-align: center;
+}
+
+/* Box Container to hold all boxes for steps */
+.box-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
+  justify-content: space-between; /* Spaces out boxes evenly */
+  gap: 20px; /* Provides space between boxes */
+}
+
+/* Individual Box Styling */
+.boxlive {
+  flex: 1 1 30%; /* Each box takes up roughly 30% of the container, adjusting as necessary */
+  padding: 20px;
+  border: 1px solid #ccc; /* Adds a subtle border */
+  box-shadow: 0 5px 5px rgba(0,0,0,0.1); /* Optional: Adds shadow for depth */
+  margin-bottom: 20px;
+}
+
+/* Responsive Image within the Left Box */
+.left-box img {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+  margin-top: 15px; /* Adds space above the image */
+}
+
+/* Styles for left box (contains the What is LiDAR? section) */
+.left-box {
+  flex: 1 1 100%; /* Full width on smaller screens, adjusts on larger screens */
+  text-align: left;
+  padding: 15px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.1); /* Optional: Adds shadow for depth */
+}
+/* LIDAR.HTML ENDS */
+
+/* LIVEFEED.HTML STARTS */
+.bottom-feed {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+.livestream-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top:  30px; /* Padding at top to make room for Twitch embed script */
+}
+
+.twitch-chat {
+  flex: 1 1 50%; /* Each stream takes half the width on larger screens */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Adds a subtle border */
+  box-shadow: 0 5px 5px rgba(179, 49, 49, 0.1); /* Optional: Adds shadow for depth */
+  
+}
+
+.twitch-chat iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+/* LIVEFEED.HTML ENDS */
+
+/* HEXAPODROBOT.HTML STARTS */
+.hxsection1, .hxsection2, .hxsection3 {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  margin: 20px 0; /* Spacing between sections */
+  padding: 20px; /* Padding inside each section */
+}
+
+/* Left and Right General Style */
+.left, .right {
+  flex: 1; /* Take up equal space */
+  padding: 15px; /* Padding inside each sub-container */
+}
+
+/* Specific to each section */
+.hxsection2 .right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space out multiple images */
+}
+
+.hxsection2 .right img {
+  width: 30%; /* Allocate width to each image */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the area without stretching */
+  margin: 5px; /* Margin around images */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: Adds shadow for a little depth */
+}
+.left img {
+  width: 100%; /* Full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 750px; /* Maximum width of the image */
+  object-fit: contain; /* Ensures the image is fully visible within the frame */
+}
+
+/* Specific Style for the First Section's Left Image */
+.hxsection1 .left img {
+  max-width: 500px; /* Smaller max-width for the first image */
+  object-fit: cover; /* Cover the area, maintain aspect ratio, may crop slightly */
+}
+/* HEXAPODROBOT.HTML ENDS */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  header, nav, .main-section, .index-con, .livestream-container{
+      max-width: 100%;
+      padding: 0 10px;
+  }
+
+  nav ul {
+      justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+      font-size: 1.5em;
+      padding: 10px 0;
+  }
+
+  nav, .box-container, .lidar-container {
+      flex-direction: column;
+  }
+
+  nav ul, .index-con {
+      flex-direction: column;
+      align-items: center;
+  }
+  .team-left, .team-right, .team-left-text, .team-right-text, .twitch-lidar, .embed-container, .twitch-chat{
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  nav ul li a {
+      padding: 10px;
+      font-size: 16px;
+  }
+  .main-section {
+      min-height: 400px;
+  }
+  .section {
+    flex-basis: 50%; /* Take half the width on medium screens */
+  }
+  .boxlive {
+    flex-basis: 100%; /* Makes each box take the full width */
+  }
+  .left-box {
+    order: -1; /* Places the What is LiDAR? section above the steps */
+  }
+  .hxsection1, .hxsection2, .hxsection3 {
+    flex-direction:  column; /* Stack on smaller screens */
+    text-align: center; /* Center the text */
+ }
+ .hxsection2 .right {
+  flex-direction: column; /* Stack images vertically on smaller screens */
+}
+  .hxsection2 .right img {
+    width: 80%; /* Full width for small screens */
+    margin: 10px auto; /* Center images with automatic horizontal margins */
+  }
+  .hxsection1 .left img {
+    width: 90%; /* Larger percentage to utilize more space on smaller screens */
+}
+.left img {
+  max-width: 100%; /* Allows the image to expand to the container's width on smaller screens */
+  width: 80%; /* Takes up 80% of the .left container to give some padding */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.hxsection1 .left img {
+  width: 90%; /* Larger percentage to utilize more space on smaller screens */
+}
+
+
+}
+
+@media (max-width: 480px) {
+  header, .big-header {
+      font-size: 1.2em;
+  }
+
+  nav ul li a {
+      padding: 8px;
+      font-size: 14px;
+  }
+  .section {
+    flex-basis: 100%; /* Stack vertically on small screens */
+  }
+  .hxsection1 .left img {
+    width: 100%; /* Utilize the full width at very small screen sizes */
+  }
+}
